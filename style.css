@@ -1,0 +1,404 @@
+/****************
+General Styles
+****************/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main-heading {
+	text-align: center;
+	margin:0;
+	padding: 17% 0 19% 0;
+	font-size: 5.3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: -8px;
+	line-height: .8;
+}
+h3 {
+	font-size: 1.175em;
+}
+h4.category-title {
+	font-size: 14px;
+	color: coral;
+	letter-spacing: 1px;
+}
+.jumbotron {
+	margin: 0;
+	padding: 5% 0;
+	height: 500px;
+	background: #0071ba;
+	color: white;
+}
+.jumbotron-innerwrapper {
+	max-width: 1650px;
+	margin: 0 auto;
+	background: none;
+}
+.white-line {
+	color: white;
+	background: white;
+}
+
+
+/****************
+Main Navigation Styles - the main navigation functionality can be found in app.js
+****************/
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+.navbar-brand {
+	max-width: 250px;
+	width: 80%;
+}
+.navbar-brand img {
+	width: 100%;
+	height: auto;
+}
+.hamburger {
+	display: block;
+	width: 50px;
+	float: right;
+	height: auto;
+	margin: 0;
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+.hamburger-bar {
+	width: 80%;
+	margin: 5px auto;
+	background: #2b2d2e;
+	height: 5px;
+	border-radius: 2px;
+	transition: .35s all ease-in-out;
+}
+
+.nav-list {
+	margin: 0;
+	height: 94vh;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+    position: absolute;
+    right: 0;
+    top: 54px;
+    background: #2b2d2e;
+    /*background: rgba(255, 160, 0, .9);*/
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    z-index: 1000;
+}
+.nav-list a {
+	display: block;
+	color: white;
+	transition: .35s color ease-in-out;
+}
+.nav-list a:hover {
+    text-decoration: none;
+    color: #0071ba;
+}
+.nav-list li {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 3.3% 0;
+	text-align: center;
+}
+.nav-list li:hover {
+	background: #343638;
+	transition: .35s background ease-in-out;
+}
+
+
+/****************
+home page featured and latest posts
+****************/
+
+.featured-post img,
+.post img {
+    width: 100%;
+    height: auto;
+}
+section.articles {
+	padding: 0 1rem 2rem 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.category-title {
+	margin: 2% 0;
+}
+.featured-post,
+.post {
+	background: #fff;
+	color: #333;
+}
+.article-meta {
+	padding: 2%;
+}
+.featured-home-articles {
+	max-width: 1500px;
+	margin: -100px auto 0;
+
+}
+
+
+
+/****************
+footer
+****************/
+
+footer {
+  background: #2b2d2e;
+  color: white;
+  padding: 6%;
+}
+.footer-row img {
+  width: 72%;
+  display: inline-block;
+  margin: 0 0 2.8% 0;
+}
+.footer-row {
+	list-style: none;
+	padding: 0;
+	margin: 5% auto;
+}
+.footer-innerwrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+.btn-lg {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 2px;
+	background: #ffa000;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	padding: 2%;
+}
+.footer-social {
+	text-align: center;
+}
+.social-icons {
+	text-align: left;
+}
+.social {
+	list-style: none;
+	text-align: center;
+	margin: 5% 0 0 0;
+	padding: 0;
+}
+.social li {
+	width: 20%;
+	display: inline-block;
+}
+.social li a {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	color: white;
+	border: 1px solid;
+	border-radius: 100%;
+	text-align: center;
+	padding: 12% 0;
+}
+
+
+/****************
+category page styling
+****************/
+
+.category {
+	max-width: 1350px;
+	width: 100%;
+	margin: -100px auto 0;
+}
+.category-list {
+	width: 100%;
+}
+.category-article {
+	border: 1px solid #eee;
+	background: white;
+}
+.category-article img {
+	display: inline-block;
+	width: 100%;
+}
+
+.category article .category-title {
+	margin: 1% 0;
+}
+
+.category-header,
+.article-header {
+	background: #0071ba;
+	color: white;
+	height: 500px;
+	padding: 19% 0 0 0;
+	text-align: center;
+}
+.category-desc {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: left;
+	margin: -25px 0 0 20%;
+}
+.ad {
+	background: pink;
+	height: 200px;
+}
+.category-title {
+
+}
+
+
+/****************
+single page styling
+****************/
+
+.article-header h1 {
+	font-size: 5.3em;
+}
+.single-post-article {
+	width: 95%;
+	margin: -100px auto 0;
+	font-size: 18px;
+
+}
+.similar-posts {
+	width: 95%;
+	margin: 0 auto;
+}
+.single-post-article img,
+.similar-posts img {
+	width: 100%;
+	height: auto;
+}
+.article-content {
+	font-size: 20px;
+    padding: 0 5%;
+    margin: 50px 10px 10px;
+}
+.similar-posts .row .article-card {
+	padding: 2%;
+	margin: 5% 0;
+}
+.more-articles {
+	margin: 6% 0 0 4%;
+	color: #353434;
+}
+
+
+/**************
+Social sharing icons
+**************/
+
+.social-icons {
+	list-style: none;
+	max-width: 1350px;
+	width: 100%;
+	margin: 2% auto;
+	text-align: center;
+}
+.social-icons li {
+	display: inline-block;
+	width: 19%;
+}
+.social-sharing-heading {
+	margin: 4%;
+	text-align: left;
+}
+/****************
+Re-usable classes
+*****************/
+
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.blue {
+	background: #0071ba;
+}
+
+@media (min-width: 544px) {
+	.main-heading {
+	padding: 10% 0 3% 0;
+
+}
+	.category-article {
+		min-height: 200px;
+		margin: 1% 0;
+	}
+	.category-article img {
+		width: 275px;
+		float: left;
+		margin-right: 2%;
+	}
+	.social li {
+	width: 10%;
+}
+.category-header {
+	padding: 4% 0 1% 0
+}
+}
+
+
+@media (min-width: 1200px) {
+
+	.nav-list li {
+	padding: 1.65% 0;
+
+}
+.main-heading {
+	margin: 1% 0;
+	font-size: 10em;
+	letter-spacing: -10px;
+	padding: 7% 0;
+}
+.jumbotron {
+	padding: 2% 0;
+}
+.category-article img {
+	margin-right: 1%;
+}
+.social li a {
+	padding: 9% 0;
+}
+.article-header {
+	padding: 5% 0 0 0;
+}
+.category-header .main-heading {
+	padding: 3% 0;
+	margin: 0;
+}
+.single-post-article,
+.similar-posts {
+	width: 70%;
+
+
+}
+}
